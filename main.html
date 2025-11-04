@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-<h1>Feedback form</h1>
-<form action="" method="post">
-	<label for=name>Name<span aria-hidden="true">*</span></label>
-	<input type="text" id=name  minlength="3" maxlength="50" required>
-	<br>
-	<label for=portfolio>Portfolio<span aria-hidden="true">*</span></label>
-	<input type="url" id="portfolio" required>
-	<br>
-	<label for=favColor>Favourite Color<span aria-hidden="true">*</span></label>
-	<input type="color" id="favColor">
-    	<br>
-	<label for=likeness>Likeness<span aria-hidden="true">*</span></label>
-	<input type="Range" id="likeness" min="1" max="100">
+  <!-- the entire body must be written by student -->
+  <h1>Feedback Form</h1>
 
-</form>
-    <script type="text/javascript" src="./script.js">
-</script>
+  <form action="" method="post">
+    <!-- Name -->
+    <label for="name">Name<span aria-hidden="true">*</span></label>
+    <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+    <br>
 
+    <!-- Portfolio -->
+    <label for="portfolio">Portfolio<span aria-hidden="true">*</span></label>
+    <input type="url" id="portfolio" name="portfolio" required>
+    <br>
+
+    <!-- Favorite Color -->
+    <label for="favColor">Favorite Color<span aria-hidden="true">*</span></label>
+    <input type="color" id="favColor" name="favColor" required>
+    <br>
+
+    <!-- Likeness -->
+    <label for="likeness">Likeness<span aria-hidden="true">*</span></label>
+    <input type="range" id="likeness" name="likeness" min="1" max="100" required>
+  </form>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
